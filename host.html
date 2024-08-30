@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Host Helper</title>
+<script src="host.js"></script>
+</head>
+Host Helper
+<h1>
+    <button id="waitlist" onclick="switchWaitlist()">Wait List</button>
+    <button id="dining" onclick="switchDining()">Dining Room</button>
+    <button id="counter" onclick="switchCounter()">Counter Top</button>
+    <button id="courtyard" onclick="switchCourtyard()">Courtyard</button>
+</h1>
+<body>
+<label for="name">Name</label>
+<input type="text" id="name">
+<label for="party">Party Size</label>
+<input type="text" id="party">
+<label for="section">Preferred Section</label>
+<select name="section" id="section">
+    <option value="fa">First Available</option>
+    <option value="dr">Dining Room</option>
+    <option value="cy">Courtyard</option>
+    <option value="ct">Counter Top</option>
+    <option value="noct">No Counter Top</option>
+    <option value="in">Inside</option>
+    <option value="wr">Walnut Room</option>
+</select>
+<button>Time Estimate</button>
+<button onclick="addToList()">Add to List</button>
+</body>
+</html>

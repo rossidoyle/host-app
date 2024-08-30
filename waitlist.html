@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wait List</title>
+    <script src="host.js"></script>
+</head>
+Wait List
+<h1>
+    <button id="main" onclick="switchMain()">Main</button>
+    <button id="dining" onclick="switchDining()">Dining Room</button>
+    <button id="counter" onclick="switchCounter()">Counter Top</button>
+    <button id="courtyard" onclick="switchCourtyard()">Courtyard</button>
+</h1>
+<body>
+<label for="callAhead">Show Call Aheads</label>
+<input id="callAhead" type="checkbox">
+<table id="waitTable">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Party Size</th>
+        <th>Preferred Section</th>
+        <th>Time In</th>
+        <th>Estimate</th>
+        <th>Recommend Table</th>
+    </tr>
+    </thead>
+    <tbody id="waitTableBody"></tbody>
+</table>
+</body>
+</html>
